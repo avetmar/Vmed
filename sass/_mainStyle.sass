@@ -1,0 +1,40 @@
+html
+	font-family: 'Inter', sans-serif
+	font-size: 14px
+	font-weight: 400
+	line-height: 140%
+	scroll-behavior: smooth
+	color: $text-color
+
+a
+	color: $text-color	
+
+*
+	margin: 0
+	padding: 0
+	text-decoration: none
+	list-style-type: none
+
+*, *::before, *::after
+	box-sizing: border-box
+
+:where( ul, ol ):where([class])
+	padding-left: 0
+
+
+img
+	display: block
+	max-width: 100%
+
+input, textarea, select, button
+	font: inherit
+
+body
+	position: relative
+	background-color: $main-color
+	color: $text_color
+
+.container
+	max-width: 1920px
+	padding: 0 20px
+	margin: 0 auto
