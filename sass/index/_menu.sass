@@ -1,0 +1,32 @@
+.navigation
+    position: absolute
+    top: 80px
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 80px
+        overflow: hidden
+        background: #ffffff
+        padding: 17px 50px
+    .menu
+        width: 100%
+        &__list
+            display: flex
+            justify-content: center
+            gap: 30px
+            &_item
+                a
+                    color: $main-color
+                    line-height: 128%
+                    font-size: 15px
+                    font-weight: 500
+                select
+                    color: $main-color
+                    border: none
+                    line-height: 128%
+                    font-size: 15px
+                    font-weight: 500

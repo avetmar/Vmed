@@ -1,0 +1,50 @@
+.advantages
+    background: #ffffff
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        padding: 120px 300px
+    &__text
+        display: flex
+        flex-direction: column
+        max-width: 380px
+        &_title
+            color: $main-color
+        &_descr
+    &__content
+        position: relative
+        display: grid
+        max-width: 740px
+        grid-template-columns: 1fr 1fr
+        grid-template-row: 1fr 1fr
+        border-radius: 30px
+        overflow: hidden
+        &_card
+            padding: 35px
+            border-radius: 35px
+            background: #fff
+            z-index: 5
+            h4
+                color: $main-color
+        &_card-blue
+            padding: 35px
+            border-radius: 35px
+            background: $main-color
+            z-index: 5           
+            color: #ffffff
+        img
+            margin-bottom: 30px
+        h4
+            margin-bottom: 20px
+        p
+            font-size: 16px
+
+        .blueBG-effect
+            position: absolute
+            width: 70px
+            height: 70px
+            background: $main-color
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 3
