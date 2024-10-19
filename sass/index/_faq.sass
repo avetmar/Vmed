@@ -1,0 +1,54 @@
+.faq
+    background: #ffffff
+    padding: 120px 0
+    &__wrapper
+        display: flex
+        max-width: 1280px
+        margin: 0 auto
+        justify-content: space-between
+    &__text
+        max-width: 405px
+    &__title
+        margin-bottom: 20px
+    &__list
+        width: 710px
+        summary
+            display: flex
+            justify-content: space-between
+            margin-bottom: 20px
+            align-items: center
+            .symbol
+                position: relative
+                height: 18px
+                width: 18px
+                .span_minus
+                    position: absolute
+                    top: 50%
+                    right: 0
+                    transform: translateY(-50%)
+                    width: 18px
+                    height: 2.5px
+                    background: #33CFFF
+                    display: block
+                .span_plus
+                    position: absolute
+                    left: 50%
+                    top: 0
+                    transform: translateX(-50%)
+                    transform: rotate(90deg)
+                    width: 2.5px
+                    height: 18px
+                    background: #33CFFF
+                    display: block
+                    transition: .1s ease
+
+        article
+            font-size: 18px
+            line-height: 140%
+            margin-bottom: 30px
+
+        details[open]
+            //  transition: height 3s ease-in
+            .span_plus
+                transform: rotate(0deg)
+                transform: translateX(-50%)
