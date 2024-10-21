@@ -14,37 +14,36 @@
 </head>
 
 <body>
-    <header class="header">
+    <nav class="nav">
         <div class="container">
-            <div class="header__wrapper">
-                <div class="header__contacts">
-                    <a href="#" class="header__contacts_phone min-text"><img src="icons/phone_header.svg"
-                            alt="phone">+374 41
+            <div class="nav__wrapper">
+                <div class="nav__contacts">
+                    <a href="#" class="nav__contacts_phone min-text"><img src="icons/phone_nav.svg" alt="phone">+374 41
                         909003</a>
-                    <a href="#" class="header__contacts_address min-text"><img src="icons/map_header.svg" alt="map">2/2
+                    <a href="#" class="nav__contacts_address min-text"><img src="icons/map_nav.svg" alt="map">2/2
                         Rubinyants,
                         Yerevan</a>
-                    <a href="#" class="header__contacts_workTime min-text"><img src="icons/calendar_header.svg"
+                    <a href="#" class="nav__contacts_workTime min-text"><img src="icons/calendar_nav.svg"
                             alt="workTime">Mon - Sat : 09:00 AM - 06:00 PM</a>
                 </div>
-                <div class="header__rSide">
-                    <div class="header__rSide_lang min-text">
+                <div class="nav__rSide">
+                    <div class="nav__rSide_lang min-text">
                         <div class="eng thisePage">EN</div>
                         <div class="rus">РУ</div>
                         <div class="arm">Հայ</div>
                     </div>
-                    <div class="header__rSide_social">
-                        <img src="icons/facebook_header.svg" alt="facebooke">
-                        <img src="icons/insta_header.svg" alt="instagram">
+                    <div class="nav__rSide_social">
+                        <img src="icons/facebook_nav.svg" alt="facebooke">
+                        <img src="icons/insta_nav.svg" alt="instagram">
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <nav class="navigation">
+    <header class="header">
         <div class="container">
-            <div class="navigation__wrapper">
+            <div class="header__wrapper">
                 <img src="icons/logo.svg" alt="logo">
                 <menu class="menu">
                     <ul class="menu__list">
@@ -68,7 +67,7 @@
                 <a href="#" class="menu_button">Make an Appointment</a>
             </div>
         </div>
-    </nav>
+    </header>
 
     <section class="promo">
         <div class="container">
@@ -429,7 +428,20 @@
                 <div class="about__worktime">
                     <h3 class="about__worktime_title">Working Hours</h3>
                     <p class="about__worktime_descr">Check out Medicana’s Office hours to plan your visit.</p>
-                    <div class="about__times"></div>
+                    <div class="about__times">
+                        <p class="about__times_day">Monday</p>
+                        <p class="about__times_time">8:00 - 20:00</p>
+                        <p class="about__times_day">Tuesday</p>
+                        <p class="about__times_time">8:00 - 20:00</p>
+                        <p class="about__times_day">Wednesday</p>
+                        <p class="about__times_time">8:00 - 20:00</p>
+                        <p class="about__times_day">Thursday</p>
+                        <p class="about__times_time">8:00 - 20:00</p>
+                        <p class="about__times_day">Friday</p>
+                        <p class="about__times_time">10:00 - 16:00</p>
+                        <p class="about__times_day">Saturday</p>
+                        <p class="about__times_time">10:00 - 16:00</p>
+                    </div>
                     <a href="#" class="main_button">Make an Appointment</a>
                 </div>
             </div>
@@ -500,6 +512,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 

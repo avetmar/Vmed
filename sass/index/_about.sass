@@ -1,48 +1,70 @@
 .about
-    background: #ffffff
-    &__wrapper
-        max-width: 1360px
-        margin: 0 auto
-        background: #F0FBFF
-        border-radius: 52px
-        overflow: hidden
-        padding: 40px
-        display: flex
-        justify-content: space-between
-        align-items: center
-    &__team
-        max-width: 620px
-        display: flex
-        flex-direction: column
-        gap: 20px
-        .text_button
-            margin-bottom: 10px
+	background: #ffffff
+	&__wrapper
+		max-width: 1360px
+		margin: 0 auto
+		background: #F0FBFF
+		border-radius: 52px
+		overflow: hidden
+		padding: 40px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__team
+		max-width: 620px
+		display: flex
+		flex-direction: column
+		gap: 20px
+		.text_button
+			margin-bottom: 10px
 
-        .about__card_wrapper
-            display: flex
-            justify-content: space-between
-            .about__card
-                background: #ffffff
-                .about__card_text
-                    padding: 20px
-                    .expert_name
-                        margin-bottom: 5px
-                        font-size: 16px
-                        color: $main-color
+		.about__card_wrapper
+			display: flex
+			justify-content: space-between
+			.about__card
+				background: #ffffff
+				.about__card_text
+					padding: 20px
+					.expert_name
+						margin-bottom: 5px
+						font-size: 16px
+						color: $main-color
 
-    &__worktime
-        background: $main-color
-        color: #ffffff
-        border-radius: 24px
-        overflow: hidden
-        padding: 40px
-        h3
-            color: #ffffff
-            margin-bottom: 10px
-        p
-            margin-bottom: 10px
-        
-        .about__times
-            width: 439px
-            height: 276px
-            margin-bottom: 20px
+	&__worktime
+		background: $main-color
+		color: #ffffff
+		border-radius: 24px
+		overflow: hidden
+		padding: 40px
+		min-width: 520px
+		&_title
+			color: #ffffff
+			margin-bottom: 10px
+		&_descr
+			margin-bottom: 10px
+		
+		.about__times
+			width: 100%
+			display: grid
+			grid-template-rows: repeat(6, 46px)
+			grid-template-columns: 157px 1fr
+			border: 1px solid #1273A3
+			border-radius: 8px
+			align-items: center
+			margin-bottom: 20px
+			&_time
+				align-content: center
+				border-bottom: 1px solid #1273A3
+				width: 100%
+				height: 100%
+				text-align: right
+				padding-right: 20px
+			&_day
+				padding-left: 20px
+				border-right: 1px solid #1273A3
+				border-bottom: 1px solid #1273A3
+				height: 100%
+				align-content: center
+			
+
+					
