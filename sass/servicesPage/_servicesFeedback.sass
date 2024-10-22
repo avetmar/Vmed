@@ -1,0 +1,52 @@
+.feedbackS
+    background: #ffffff
+    &__wrapper
+        background: #EFFEFA
+        max-width: 1280px
+        margin: 0 auto
+        border-radius: 52px
+        overflow: hidden
+        padding: 95px 0 120px 0
+        text-align: center
+    &__title
+        max-width: 560px
+        margin: 0 auto
+        margin-bottom: 20px
+    &__descr
+        max-width: 546px
+        margin: 0 auto
+        margin-bottom: 65px
+    &__slider
+        text-align: left
+        display: flex
+        gap: 24px
+        overflow-x: auto
+        scrollbar-width: none
+        &_card
+            padding: 24px
+            border-radius: 24px
+            overflow: hidden
+            width: 358px
+            background: #ffffff
+            border: 1px solid #ededed
+            flex-shrink: 0
+            user-select: none
+        &_title
+            color: $main-color
+            margin-bottom: 12px
+        &_descr
+            line-height: 160%
+            margin-bottom: 27px
+        &_person
+            display: flex
+            padding: 15px
+            gap: 12px
+            background: #F7F7F7
+            border-radius: 16px
+            align-items: center
+            &-name
+                font-weight: 500
+                color: $main-color
+            &-img
+                border-radius: 12px
+                overflow: hidden
