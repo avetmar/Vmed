@@ -1,0 +1,35 @@
+.questions
+    background: #ffffff
+    &__wrapper
+        background: $bg-color
+        padding: 40px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-radius: 52px
+    &__content
+        display: grid
+        grid-template-columns: 24px 1fr
+        grid-template-rows: min-content
+        column-gap: 12px
+        row-gap: 20px
+        max-width: 487px
+        align-content: center
+    &__image
+        position: relative
+    &__wrap
+        position: absolute
+        display: flex
+        flex-direction: column
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        align-items: center
+        gap: 18px
+        width: 360px
+    &__title
+        color: #ffffff
+        text-align: center
+    &__icon
+        width: 43px
+        height: 43px
