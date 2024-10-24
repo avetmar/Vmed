@@ -9,7 +9,7 @@
         max-width: 740px
         object-fit: contain
     &__content
-        max-width: 383px
+        max-width: 497px
     &__title
         margin-bottom: 20px
     &__descr
@@ -18,34 +18,34 @@
     &__slideList
         display: flex
         flex-direction: column
-        details
-            summary
-                display: flex
-                height: 60px
-                align-items: center
-                cursor: pointer
-                .treatment__num
-                    width: 62px
-                    text-align: center
-                    font-size: 16px
-                    color: $main-color
-                .treatment__title
-                    padding-left: 20px
-                    display: flex
-                    align-items: center
-                    height: 100%
-                    border-left: 4px solid #D1F0FA
-                    margin: 0
-            article
-                display: flex
-                .treatment__span
-                    width: 396px
-                    background: #ffffff
-                p
-                    padding-left: 20px
-                    border-left: 4px solid #D1F0FA
-                    line-height: 160%
-
-        details[open]
-            .treatment__title, p
+        .openList
+            grid-template-rows: max-content 1fr
+            .treatment__slideList_title
                 border-left: 4px solid #33CFFF
+            .treatment__slideList_descr
+                border-left: 4px solid #33CFFF
+        &_item
+            display: grid
+            grid-template-columns: 62px 1fr
+            grid-template-rows: max-content 0px
+            cursor: pointer
+            overflow: hidden
+            transition: all .7s ease
+            
+        &_num
+            font-size: 16px
+            color: $main-color
+            justify-self: center
+            align-content: center
+        &_title
+            padding: 15px 20px
+            border-left: 4px solid #D1F0FA
+            transition: all .7s ease
+        &_descr
+            line-height: 160%
+            grid-column: 2 / 3
+            border-left: 4px solid #D1F0FA
+            padding: 0px 20px 15px 20px
+            transition: all .7s ease
+
+

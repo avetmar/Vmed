@@ -4,33 +4,51 @@
     left: 50%
     transform: translateX(-50%)
     width: 100%
+    .open
+        height: 133px
+        .nav_arrow
+            transform: rotate(180deg)
     &__wrapper
         display: flex
-        align-items: center
-        justify-content: center
+        flex-direction: column  
+        gap: 30px      
         border-radius: 80px
         overflow: hidden
         background: #ffffff
         padding: 17px 50px
-    .menu
-        width: 100%
-        &__list
+        height: 84px
+        transition: height .7s ease
+        
+        &_top
+            display: flex
+            align-items: center
+            justify-content: center
+        .nav
+            width: 100%
             display: flex
             justify-content: center
             gap: 30px
-            &_item
-                a
-                    color: $main-color
-                    line-height: 128%
-                    font-size: 15px
-                    font-weight: 500
-                select
-                    color: $main-color
-                    border: none
-                    line-height: 128%
-                    font-size: 15px
-                    font-weight: 500
+            &__item, &__item>a
+                color: $main-color
+                line-height: 128%
+                font-size: 15px
+                font-weight: 500
+            &_menu
+                display: flex
+                gap: 8px
+                align-items: center
+                cursor: pointer
+                .nav_arrow
+                    transition: all .7s ease
 
+        .menu
+            display: flex
+            gap: 20px
+            justify-content: center
+            a
+                &:hover
+                    color: $main-color
+                    border-bottom: 1px solid $main-color
 .fixed
     position: fixed
     top: 10px

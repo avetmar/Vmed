@@ -14,57 +14,62 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <section class="pageTop">
         <div class="container">
-            <div class="nav__wrapper">
-                <div class="nav__contacts">
-                    <a href="#" class="nav__contacts_phone min-text"><img src="icons/phone_nav.svg" alt="phone">+374 41
+            <div class="pageTop__wrapper">
+                <div class="pageTop__contacts">
+                    <a href="#" class="pageTop__contacts_phone min-text"><img src="icons/phone_pageTop.svg"
+                            alt="phone">+374 41
                         909003</a>
-                    <a href="#" class="nav__contacts_address min-text"><img src="icons/map_nav.svg" alt="map">2/2
-                        Rubinyants,
-                        Yerevan</a>
-                    <a href="#" class="nav__contacts_workTime min-text"><img src="icons/calendar_nav.svg"
-                            alt="workTime">Mon - Sat : 09:00 AM - 06:00 PM</a>
+                    <a href="#" class="pageTop__contacts_address min-text"><img src="icons/map_pageTop.svg"
+                            alt="map">Канакер-Зейтун, Рубинянц 2/2</a>
+                    <a href="#" class="pageTop__contacts_workTime min-text"><img src="icons/calendar_pageTop.svg"
+                            alt="workTime">Пон. - Суб. : 09:00 - 18:00 </a>
                 </div>
-                <div class="nav__rSide">
-                    <div class="nav__rSide_lang min-text">
-                        <div class="eng thisePage">EN</div>
-                        <div class="rus">РУ</div>
+                <div class="pageTop__rSide">
+                    <div class="pageTop__rSide_lang min-text">
+                        <div class="eng thisePage">РУ</div>
+                        <!-- <div class="rus">РУ</div> -->
                         <div class="arm">Հայ</div>
                     </div>
-                    <div class="nav__rSide_social">
-                        <img src="icons/facebook_nav.svg" alt="facebooke">
-                        <img src="icons/insta_nav.svg" alt="instagram">
+                    <div class="pageTop__rSide_social">
+                        <img src="icons/facebook_pageTop.svg" alt="facebooke">
+                        <img src="icons/insta_pageTop.svg" alt="instagram">
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </section>
 
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="index.html"><img src="icons/logo.svg" alt="logo"></a>
-                <menu class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list_item"><a href="#">About Us</a></li>
-                        <li class="menu__list_item">
-                            <select class="menuSelect" name="menuSelect" id="menuSelect">
-                                <option value="services.html">Services</option>
-                                <option value="services.html">Services</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </li>
-                        <li class="menu__list_item"><a href="dentists.html">Our Dentist</a></li>
-                        <li class="menu__list_item"><a href="casmetology.html">Cosmetology</a></li>
-                        <li class="menu__list_item"><a href="contacts.html">Contact Us</a></li>
-                        <li class="menu__list_item"><a href="faq.html">FAQ</a></li>
-                    </ul>
+                <div class="header__wrapper_top">
+                    <a href="index.html"><img src="icons/logo.svg" alt="logo"></a>
+                    <nav class="nav">
+                        <li class="nav__item"><a href="#">О нас</a></li>
+                        <li class="nav__item nav_menu">Услуги <img class="nav_arrow" src="icons/arrow_menu.svg"
+                                alt="arrow"></li>
+                        <li class="nav__item"><a href="dentists.html">Наши врачи</a></li>
+                        <li class="nav__item"><a href="casmetology.html">Косметолоия</a></li>
+                        <li class="nav__item"><a href="contacts.html">Контакты</a></li>
+                        <li class="nav__item"><a href="faq.html">ЧЗВ</a></li>
+                    </nav>
+                    <a href="#" class="button">+374 (98) 90 90 03</a>
+                </div>
+                <menu class="menu min-text">
+                    <li class="menu_item"><a href="servicesPages/implantation.html">Имплантация зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/implants.html">Ипланты</a></li>
+                    <li class="menu_item"><a href="servicesPages/prosthetics.html">Протезирование зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/veneers.html">Виниры, коронки</a></li>
+                    <li class="menu_item"><a href="servicesPages/surgery.html">Хирургия</a></li>
+                    <li class="menu_item"><a href="servicesPages/correction.html">Исправление прикуса</a></li>
+                    <li class="menu_item"><a href="servicesPages/dentistry.html">Лечение Зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/gums.html">Лечение десен</a></li>
+                    <li class="menu_item"><a href="servicesPages/whitening.html">Отбеливанте зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/hygiene.html">Гигиена зубов и полости рта</a></li>
+                    <li class="menu_item"><a href="servicesPages/diagnostics.html">Диагностика</a></li>
                 </menu>
-                <a href="#" class="menu_button">Make an Appointment</a>
             </div>
         </div>
     </header>

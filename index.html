@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -14,57 +14,62 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <section class="pageTop">
         <div class="container">
-            <div class="nav__wrapper">
-                <div class="nav__contacts">
-                    <a href="#" class="nav__contacts_phone min-text"><img src="icons/phone_nav.svg" alt="phone">+374 41
+            <div class="pageTop__wrapper">
+                <div class="pageTop__contacts">
+                    <a href="#" class="pageTop__contacts_phone min-text"><img src="icons/phone_pageTop.svg"
+                            alt="phone">+374 41
                         909003</a>
-                    <a href="#" class="nav__contacts_address min-text"><img src="icons/map_nav.svg" alt="map">2/2
-                        Rubinyants,
-                        Yerevan</a>
-                    <a href="#" class="nav__contacts_workTime min-text"><img src="icons/calendar_nav.svg"
-                            alt="workTime">Mon - Sat : 09:00 AM - 06:00 PM</a>
+                    <a href="#" class="pageTop__contacts_address min-text"><img src="icons/map_pageTop.svg"
+                            alt="map">Канакер-Зейтун, Рубинянц 2/2</a>
+                    <a href="#" class="pageTop__contacts_workTime min-text"><img src="icons/calendar_pageTop.svg"
+                            alt="workTime">Пон. - Суб. : 09:00 - 18:00 </a>
                 </div>
-                <div class="nav__rSide">
-                    <div class="nav__rSide_lang min-text">
-                        <div class="eng thisePage">EN</div>
-                        <div class="rus">РУ</div>
+                <div class="pageTop__rSide">
+                    <div class="pageTop__rSide_lang min-text">
+                        <div class="eng thisePage">РУ</div>
+                        <!-- <div class="rus">РУ</div> -->
                         <div class="arm">Հայ</div>
                     </div>
-                    <div class="nav__rSide_social">
-                        <img src="icons/facebook_nav.svg" alt="facebooke">
-                        <img src="icons/insta_nav.svg" alt="instagram">
+                    <div class="pageTop__rSide_social">
+                        <img src="icons/facebook_pageTop.svg" alt="facebooke">
+                        <img src="icons/insta_pageTop.svg" alt="instagram">
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </section>
 
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="index.html"><img src="icons/logo.svg" alt="logo"></a>
-                <menu class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list_item"><a href="#">About Us</a></li>
-                        <li class="menu__list_item">
-                            <select class="menuSelect" name="menuSelect" id="menuSelect">
-                                <option value="services.html">Services</option>
-                                <option value="services.html">Services</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </li>
-                        <li class="menu__list_item"><a href="dentists.html">Our Dentist</a></li>
-                        <li class="menu__list_item"><a href="casmetology.html">Cosmetology</a></li>
-                        <li class="menu__list_item"><a href="contacts.html">Contact Us</a></li>
-                        <li class="menu__list_item"><a href="faq.html">FAQ</a></li>
-                    </ul>
+                <div class="header__wrapper_top">
+                    <a href="index.html"><img src="icons/logo.svg" alt="logo"></a>
+                    <nav class="nav">
+                        <li class="nav__item"><a href="#">О нас</a></li>
+                        <li class="nav__item nav_menu">Услуги <img class="nav_arrow" src="icons/arrow_menu.svg"
+                                alt="arrow"></li>
+                        <li class="nav__item"><a href="dentists.html">Наши врачи</a></li>
+                        <li class="nav__item"><a href="casmetology.html">Косметолоия</a></li>
+                        <li class="nav__item"><a href="contacts.html">Контакты</a></li>
+                        <li class="nav__item"><a href="faq.html">ЧЗВ</a></li>
+                    </nav>
+                    <a href="#" class="button">+374 (98) 90 90 03</a>
+                </div>
+                <menu class="menu min-text">
+                    <li class="menu_item"><a href="servicesPages/implantation.html">Имплантация зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/implants.html">Ипланты</a></li>
+                    <li class="menu_item"><a href="servicesPages/prosthetics.html">Протезирование зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/veneers.html">Виниры, коронки</a></li>
+                    <li class="menu_item"><a href="servicesPages/surgery.html">Хирургия</a></li>
+                    <li class="menu_item"><a href="servicesPages/correction.html">Исправление прикуса</a></li>
+                    <li class="menu_item"><a href="servicesPages/dentistry.html">Лечение Зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/gums.html">Лечение десен</a></li>
+                    <li class="menu_item"><a href="servicesPages/whitening.html">Отбеливанте зубов</a></li>
+                    <li class="menu_item"><a href="servicesPages/hygiene.html">Гигиена зубов и полости рта</a></li>
+                    <li class="menu_item"><a href="servicesPages/diagnostics.html">Диагностика</a></li>
                 </menu>
-                <a href="#" class="menu_button">Make an Appointment</a>
             </div>
         </div>
     </header>
@@ -73,18 +78,17 @@
         <div class="container">
             <div class="promo__wrapper">
                 <div class="promo__content">
-                    <h1 class="promo__title">Keep your smile clean <br> &amp; shine</h1>
-                    <p class="promo__subtitle p1">Medicana provides comprehensive dental care services for
-                        the whole family. Our experienced team uses the latest
-                        technology to deliver high-quality.</p>
-                    <a href="#" class="main_button">Learn More</a>
+                    <h1 class="promo__title">Сохраняйте свою улыбку чистой и сияющей</h1>
+                    <p class="promo__subtitle p1">VitalMed предоставляет комплексные стоматологические услуги для всей
+                        семьи. Наша опытная команда использует новейшие технологии для предоставления высококачественных
+                        услуг.</p>
+                    <a href="#" class="main_button">Узнать больше</a>
                 </div>
                 <div class="promo__card">
                     <img src="images/promo_card_img.webp" alt="doctor" class="promo__card_img">
                     <div class="promo__card_text">
-                        <div class="promo__card_name">Erica Wijayana</div>
-                        <div class="promo__card_descr min-text">Doctor of Dental
-                            Surgery</div>
+                        <div class="promo__card_name">Виталий Оганян</div>
+                        <div class="promo__card_descr min-text">Главный врач</div>
                     </div>
                 </div>
             </div>
@@ -95,36 +99,36 @@
         <div class="container">
             <div class="advantages__wrapper container-min">
                 <div class="advantages__text">
-                    <h2 class="advantages__text_title">Why You Should Choose Our Dental Service?</h2>
-                    <p class="advantages__text_descr min-text">Discover why our dental service stands out from the rest.
-                        From our experienced team to our state-of-the-art equipment, we provide exceptional care for all
-                        your dental needs.</p>
+                    <h2 class="advantages__text_title">Почему вам стоит выбрать нашу стоматологическую услугу?</h2>
+                    <p class="advantages__text_descr min-text">Узнайте, чем наша стоматологическая служба выделяется
+                        среди остальных. От нашей опытной команды до нашего современного оборудования, мы предоставляем
+                        исключительную заботу обо всех ваших стоматологических потребностях.</p>
                 </div>
                 <div class="advantages__content">
                     <div class="blueBG-effect"></div>
                     <div class="advantages__content_card">
                         <img src="icons/advan_price.svg" alt="wallet">
-                        <h4 class="advantages__content_title">Affordable Price</h4>
-                        <p class="advantages__content_descr">The cost of dental care is reasonable and manageable within
-                            a person's budget.</p>
+                        <h4 class="advantages__content_title">Доступная цена</h4>
+                        <p class="advantages__content_descr">Стоимость стоматологических услуг является разумной и
+                            находится в пределах бюджета человека.</p>
                     </div>
                     <div class="advantages__content_card-blue">
                         <img src="icons/advan_prof.svg" alt="certificate">
-                        <h4 class="advantages__content_title">Professional Dentist</h4>
-                        <p class="advantages__content_descr">The team include dentists, dental hygienists, dental
-                            assistants, and administrative staff who work together.</p>
+                        <h4 class="advantages__content_title">Профессиональные стоматологи</h4>
+                        <p class="advantages__content_descr">В команду входят стоматологи, стоматологи-гигиенисты,
+                            ассистенты стоматолога и административный персонал, которые работают вместе.</p>
                     </div>
                     <div class="advantages__content_card-blue">
                         <img src="icons/advan_service.svg" alt="Satisfactory">
-                        <h4 class="advantages__content_title">Satisfactory Service</h4>
-                        <p class="advantages__content_descr">The patient receives quality dental care that meets or
-                            exceeds their expectations.</p>
+                        <h4 class="advantages__content_title">Высококачественное обслуживание</h4>
+                        <p class="advantages__content_descr">Пациент получает качественную стоматологическую помощь,
+                            которая соответствует или превосходит его ожидания.</p>
                     </div>
                     <div class="advantages__content_card">
                         <img src="icons/advan_reserv.svg" alt="calendar2">
-                        <h4 class="advantages__content_title">Reservation Convenience</h4>
-                        <p class="advantages__content_descr">We are happy to advise you on the basis of a project or as
-                            part of a permanent arrangement.</p>
+                        <h4 class="advantages__content_title">Удобство бронирования</h4>
+                        <p class="advantages__content_descr">Мы будем рады проконсультировать вас на основе проекта или
+                            в рамках постоянного соглашения.</p>
                     </div>
                 </div>
             </div>
@@ -134,49 +138,47 @@
     <section class="services">
         <div class="container">
             <div class="services__wrapper container-middle">
-                <h2 class="services__title">What Service We Offer</h2>
-                <p class="services__descr min-text">Our experienced team at Dentica is dedicated to providing
-                    high-quality
-                    service and personalized care to each of our clients.</p>
+                <h2 class="services__title">Какие услуги мы предлагаем</h2>
+                <p class="services__descr min-text">Наша опытная команда в VitalMed стремится предоставлять
+                    высококачественные услуги и индивидуальный подход к каждому из наших клиентов.</p>
                 <div class="services__content">
                     <div class="services__card">
                         <img class="services__card_icon" src="icons/checkup.svg" alt="checkup">
-                        <h3 class="services__card_title">Teeth Checkup</h3>
-                        <p class="services__card_descr">Dental restoration used to replace missing or damaged teeth.
+                        <h3 class="services__card_title">Осмотр зубов</h3>
+                        <p class="services__card_descr">Восстановление зубов, используемое для замены отсутствующих или
+                            поврежденных зубов.
                         </p>
                     </div>
                     <div class="services__card">
                         <img class="services__card_icon" src="icons/whitening.svg" alt="whitening">
-                        <h3 class="services__card_title">Teeth Whitening</h3>
-                        <p class="services__card_descr">Dental procedure that aims to lighten the color of teeth and
-                            remove stains and discolorations.
-                        </p>
+                        <h3 class="services__card_title">Отбеливание зубов</h3>
+                        <p class="services__card_descr">Стоматологическая процедура, направленная на осветление цвета
+                            зубов и удаление пятен и обесцвечивания.</p>
                     </div>
                     <div class="services__card">
                         <img class="services__card_icon" src="icons/braces.svg" alt="braces">
-                        <h3 class="services__card_title">Dental Braces</h3>
-                        <p class="services__card_descr">Orthodontic treatment that is used to straighten teeth and
-                            correct bite issues.
-                        </p>
+                        <h3 class="services__card_title">Брекеты для зубов</h3>
+                        <p class="services__card_descr">Ортодонтическое лечение, которое используется для выравнивания
+                            зубов и исправления проблем с прикусом.</p>
                     </div>
                     <div class="services__card">
                         <img class="services__card_icon" src="icons/implants.svg" alt="implants">
-                        <h3 class="services__card_title">Teeth Implants</h3>
-                        <p class="services__card_descr">Dental restoration used to replace missing or damaged teeth.
+                        <h3 class="services__card_title">Зубной имплантатs</h3>
+                        <p class="services__card_descr">Восстановление зубов, используемое для замены отсутствующих или
+                            поврежденных зубов.
                         </p>
                     </div>
                     <div class="services__card">
                         <img class="services__card_icon" src="icons/filling.svg" alt="filling">
-                        <h3 class="services__card_title">Dental Filling</h3>
-                        <p class="services__card_descr">Dental procedure that is used to repair a tooth that has been
-                            damaged by decay, cavities, or other types of damage.
-                        </p>
+                        <h3 class="services__card_title">Пломбирование зубов</h3>
+                        <p class="services__card_descr">Стоматологическая процедура, которая используется для
+                            восстановления зуба, поврежденного кариесом, полостью или другими типами повреждений.</p>
                     </div>
                     <div class="services__card">
                         <img class="services__card_icon" src="icons/dentistry.svg" alt="dentistry">
-                        <h3 class="services__card_title">Cosmetic Dentistry</h3>
-                        <p class="services__card_descr">Dental procedures that are designed to improve the appearance of
-                            a person's teeth, gums, and overall smile.
+                        <h3 class="services__card_title">Косметическая стоматология</h3>
+                        <p class="services__card_descr">Стоматологические процедуры, направленные на улучшение внешнего
+                            вида зубов, десен и улыбки человека в целом.
                         </p>
                     </div>
                 </div>
@@ -188,63 +190,43 @@
         <div class="container">
             <div class="treatment__wrapper container-min">
                 <div class="treatment__content">
-                    <h2 class="treatment__title">How to Get Treatment at Medicana?</h2>
-                    <p class="treatment__descr min-text">Discover why our dental service stands out from the rest. From
-                        our experienced team to our state-of-the-art equipment, we provide exceptional care for all your
-                        dental needs.</p>
+                    <h2 class="treatment__title">Как получить лечение в VitalMed?</h2>
+                    <p class="treatment__descr min-text">Узнайте, чем наша стоматологическая служба выделяется среди
+                        остальных. От нашей опытной команды до нашего современного оборудования, мы предоставляем
+                        исключительную заботу обо всех ваших стоматологических потребностях.</p>
                     <div class="treatment__slideList">
-                        <details>
-                            <summary>
-                                <div class="treatment__num">01</div>
-                                <h3 class="treatment__title">Make an Appoinment</h3>
-                            </summary>
-                            <article>
-                                <span class="treatment__span"></span>
-                                <p>Visit our website to fill out the online form, call us directly using the number
-                                    provided, email us your details and preferred date, or stop by the clinic in person.
-                                    Check your availability and have your insurance details ready. We look forward to
-                                    providing you with exceptional dental care.</p>
-                            </article>
-                        </details>
-                        <details>
-                            <summary>
-                                <div class="treatment__num">02</div>
-                                <h3 class="treatment__title">Visit the Clinic</h3>
-                            </summary>
-                            <article>
-                                <span class="treatment__span"></span>
-                                <p>Visit our website to fill out the online form, call us directly using the number
-                                    provided, email us your details and preferred date, or stop by the clinic in person.
-                                    Check your availability and have your insurance details ready. We look forward to
-                                    providing you with exceptional dental care.</p>
-                            </article>
-                        </details>
-                        <details>
-                            <summary>
-                                <div class="treatment__num">03</div>
-                                <h3 class="treatment__title">Free Consultation</h3>
-                            </summary>
-                            <article>
-                                <span class="treatment__span"></span>
-                                <p>Visit our website to fill out the online form, call us directly using the number
-                                    provided, email us your details and preferred date, or stop by the clinic in person.
-                                    Check your availability and have your insurance details ready. We look forward to
-                                    providing you with exceptional dental care.</p>
-                            </article>
-                        </details>
-                        <details>
-                            <summary>
-                                <div class="treatment__num">04</div>
-                                <h3 class="treatment__title">Get a Charming Smile</h3>
-                            </summary>
-                            <article>
-                                <span class="treatment__span"></span>
-                                <p>Visit our website to fill out the online form, call us directly using the number
-                                    provided, email us your details and preferred date, or stop by the clinic in person.
-                                    Check your availability and have your insurance details ready. We look forward to
-                                    providing you with exceptional dental care.</p>
-                            </article>
-                        </details>
+                        <div class="treatment__slideList_item openList">
+                            <div class="treatment__slideList_num">01</div>
+                            <h3 class="treatment__slideList_title">Записаться на прием</h3>
+                            <p class="treatment__slideList_descr">Позвоните нам по указанному номеру, отправьте нам по
+                                электронной почте свои данные и
+                                предпочтительную дату или зайдите в клинику лично. Мы с нетерпением ждем возможности
+                                предоставить вам исключительную стоматологическую помощь.</p>
+                        </div>
+                        <div class="treatment__slideList_item">
+                            <div class="treatment__slideList_num">02</div>
+                            <h3 class="treatment__slideList_title">Посетите клинику</h3>
+                            <p class="treatment__slideList_descr">Позвоните нам по указанному номеру, отправьте нам по
+                                электронной почте свои данные и
+                                предпочтительную дату или зайдите в клинику лично. Мы с нетерпением ждем возможности
+                                предоставить вам исключительную стоматологическую помощь.</p>
+                        </div>
+                        <div class="treatment__slideList_item">
+                            <div class="treatment__slideList_num">03</div>
+                            <h3 class="treatment__slideList_title">Бесплатная консультация</h3>
+                            <p class="treatment__slideList_descr">Позвоните нам по указанному номеру, отправьте нам по
+                                электронной почте свои данные и
+                                предпочтительную дату или зайдите в клинику лично. Мы с нетерпением ждем возможности
+                                предоставить вам исключительную стоматологическую помощь.</p>
+                        </div>
+                        <div class="treatment__slideList_item">
+                            <div class="treatment__slideList_num">04</div>
+                            <h3 class="treatment__slideList_title">Получите очаровательную улыбку</h3>
+                            <p class="treatment__slideList_descr">Позвоните нам по указанному номеру, отправьте нам по
+                                электронной почте свои данные и
+                                предпочтительную дату или зайдите в клинику лично. Мы с нетерпением ждем возможности
+                                предоставить вам исключительную стоматологическую помощь.</p>
+                        </div>
                     </div>
                 </div>
                 <img src="images/treatment.webp" alt="img">
