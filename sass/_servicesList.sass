@@ -14,14 +14,24 @@
         img
             border-radius: 24px
             overflow: hidden
+            transition: opacity 0.5s ease
     &__text
         max-width: 518px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .hidden
+            opacity: 0
+            height: 0
     &__title
         margin-bottom: 20px
     &__content
         font-size: 16px
         line-height: 140%
-        margin-bottom: 43px
+        opacity: 1
+        height: 300px
+        overflow: hidden
+        transition: opacity 2s ease
     &__menu
         display: grid
         grid-template-rows: repeat(3, 1fr)
@@ -29,14 +39,4 @@
         width: 100%
         // max-width: 430px
         row-gap: 17px
-        &_item
-            display: flex
-            align-items: center
-        &_dot
-            background: #33CFFF
-            height: 7px
-            width: 7px
-            border-radius: 50%
-            overflow: hidden
-        &_link
-            padding-left: 10px
+       
