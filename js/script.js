@@ -86,3 +86,44 @@ document.querySelectorAll("details").forEach((details) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menOpBtn = document.querySelector(".menOp");
+  const navMob = document.querySelector(".navMob");
+  const navMenuMob = document.querySelector(".nav__item.nav_menuMob");
+  const menuMob = document.querySelector(".menuMob");
+
+  // Изначальное состояние
+  navMob.style.display = "none";
+  menuMob.style.display = "none";
+
+  // Клик по бургер-кнопке
+  menOpBtn.addEventListener("click", () => {
+    const navIsVisible = navMob.style.display === "flex";
+    const menuIsVisible = menuMob.style.display === "block";
+
+    if (menuIsVisible || navIsVisible) {
+      // Закрыть всё
+      navMob.style.display = "none";
+      menuMob.style.display = "none";
+      menOpBtn.classList.remove("menOp_active");
+    } else {
+      // Открыть nav
+      navMob.style.display = "flex";
+      menOpBtn.classList.add("menOp_active");
+    }
+  });
+
+  // Клик по "Услуги"
+  navMenuMob.addEventListener("click", () => {
+    const menuIsVisible = menuMob.style.display === "block";
+
+    if (!menuIsVisible) {
+      menuMob.style.display = "block";
+      navMob.style.display = "none";
+    } else {
+      menuMob.style.display = "none";
+      navMob.style.display = "flex";
+    }
+  });
+});

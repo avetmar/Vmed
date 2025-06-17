@@ -8,6 +8,35 @@
         height: 133px
         .nav_arrow
             transform: rotate(180deg)
+    &__Mobwrapper
+        display: none
+        flex-direction: column
+        background: #ffffff
+        padding: 17px 50px
+        border-radius: 80px
+        &_first
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .menOp
+                width: 40px
+                height: 18px
+                span
+                    display: block
+                    height: 3px
+                    width: 100%
+                    margin-bottom: 3px
+                    transition: .5s all
+                    background: $text-color
+                &_active
+                    span
+                        margin-bottom: -3px
+                        &:nth-child(1)
+                            transform: rotate(-45deg)
+                        &:nth-child(2)
+                            display: none
+                        &:nth-child(3)
+                            transform: rotate(45deg)
     &__wrapper
         display: flex
         flex-direction: column  
