@@ -1,0 +1,61 @@
+@media (prefers-reduced-motion: reduce)
+	*
+		animation-duration: 0.01ms !important
+		animation-iteration-count: 1 !important
+		transition-duration: 0.01ms !important
+		scroll-behavior: auto !important
+
+@media (max-width: 1280px)
+	h1
+		font-size: 70px
+	h2
+		font-size: 35px
+
+@media (max-width: 1024px)
+	.servicesList
+		&__wrapper
+			flex-direction: column
+			.reverse
+				flex-direction: column
+		&__item
+			flex-direction: column
+			justify-content: flex-start
+			gap: 20px
+		&__text
+			max-width: inherit
+			text-align: center
+		&__content
+			height: inherit
+			margin-bottom: 20px
+		&__menu
+			place-items: center
+
+	.about
+		&__wrapper
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+
+	.treatment
+		&__content
+			max-width: inherit
+			text-align: center
+		&__wrapper
+			justify-content: center
+			align-items: center
+		img
+			display: none
+
+@media (max-width: 660px)
+	.about
+		&__team
+			.text_button
+				justify-content: center
+			.about__card_wrapper
+				display: flex
+				flex-direction: column
+				align-items: center
+				gap: 10px
+				justify-content: space-between
+		&__worktime
+			min-width: inherit
