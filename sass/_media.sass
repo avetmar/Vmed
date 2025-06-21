@@ -75,8 +75,26 @@
 		&__card
 			&_icon
 				margin-bottom: 50px
+	.questions
+		&__wrapper
+			flex-direction: column-reverse
+			padding: 10px
+		&__image
+			margin-bottom: 30px
 
+	.branch__wrapper
+		flex-direction: column-reverse
+		align-items: center
+		.branch__image
+			max-width: 80%
+			margin-bottom: 30px
+
+@media (max-width: 840px)
+	.chiefDentist__image
+		display: none
 @media (max-width: 660px)
+	h1
+		font-size: 40px
 	.pageTop
 		// height: 60px
 		&__wrapper
@@ -127,6 +145,7 @@
 	.faq__wrapper
 		flex-direction: column
 		align-items: center
+		padding: 40px 20px
 		h3
 			font-size: 15px
 		p
@@ -149,8 +168,26 @@
 		&__links
 			flex-direction: column
 			align-items: center
+			
+	.promoS, .promoD, .promoC, .promoCo, .promoF
+		&__wrapper
+			padding: 300px 0 0
+		&__title
+			text-align: left	
+
+	.chiefDentist
+		&__wrapper
+			padding: 30px 15px 30px 15px
+		&__title
+			font-size: 20px
+			line-height: 123%
+			letter-spacing: -1px
+			max-width: 653px
+			margin-bottom: 20px
 
 @media (max-width: 400px)
+	h2
+		font-size: 26px
 	.footer
 		.footer__social_text
 			display: none
