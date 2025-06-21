@@ -59,6 +59,23 @@
 		img
 			display: none
 
+	.advantages
+		&__wrapper
+			flex-direction: column
+			align-items: center
+		&__text
+			max-width: inherit
+			margin-bottom: 30px
+			text-align: center
+	
+	.services
+		&__content
+			grid-template-rows: 1fr 1fr 1fr
+			grid-template-columns: 1fr 1fr
+		&__card
+			&_icon
+				margin-bottom: 50px
+
 @media (max-width: 660px)
 	.pageTop
 		// height: 60px
@@ -84,6 +101,29 @@
 		&__worktime
 			min-width: inherit
 
+	.advantages
+		&__content
+			grid-template-columns: 1fr
+			grid-template-row: 1fr 1fr 1fr 1fr
+			gap: 20px
+			&_card, &_card-blue
+				background: #fff
+				border: 1px solid $main-color
+				color: $text-color
+			.blueBG-effect
+				display: none
+
+	.services
+		&__content
+			grid-template-rows: 1fr 1fr 1fr 1fr
+			grid-template-columns: 1fr
+
+	.about
+		&__wrapper
+			padding: 0
+		&__worktime
+			padding: 10px	
+
 	.faq__wrapper
 		flex-direction: column
 		align-items: center
@@ -104,3 +144,19 @@
 		gap: 30px
 		span
 			display: none
+
+	.footer
+		&__links
+			flex-direction: column
+			align-items: center
+
+@media (max-width: 400px)
+	.footer
+		.footer__social_text
+			display: none
+
+	.services
+		&__wrapper
+			padding: 60px 15px 15px
+		&__card
+			padding: 15px
